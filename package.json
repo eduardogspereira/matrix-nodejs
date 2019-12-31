@@ -6,9 +6,9 @@
   "author": "Eduardo G. S. Pereira <edu_vcd@hotmail.com>",
   "license": "MIT",
   "devDependencies": {
+    "@types/node": "^10.0.3",
     "gts": "^1.1.2",
-    "typescript": "~3.7.0",
-    "@types/node": "^10.0.3"
+    "typescript": "~3.7.0"
   },
   "scripts": {
     "start": "yarn run compile && node ./build/src/index.js",
@@ -17,5 +17,9 @@
     "compile": "tsc -p .",
     "fix": "gts fix",
     "prepare": "yarn run compile"
+  },
+  "dependencies": {
+    "@types/ramda": "^0.26.39",
+    "ramda": "^0.26.1"
   }
 }
