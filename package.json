@@ -5,6 +5,10 @@
   "repository": "git@github.com:eduardogspereira/matrix-nodejs.git",
   "author": "Eduardo G. S. Pereira <edu_vcd@hotmail.com>",
   "license": "MIT",
+  "dependencies": {
+    "@types/ramda": "^0.26.39",
+    "ramda": "^0.26.1"
+  },
   "devDependencies": {
     "@types/node": "^10.0.3",
     "gts": "^1.1.2",
@@ -18,8 +22,10 @@
     "fix": "gts fix",
     "prepare": "yarn run compile"
   },
-  "dependencies": {
-    "@types/ramda": "^0.26.39",
-    "ramda": "^0.26.1"
+  "renovate": {
+    "assignees": ["eduardogspereira"],
+    "automerge": true,
+    "automergeType": "pr-comment",
+    "automergeComment": "merge!"
   }
 }
