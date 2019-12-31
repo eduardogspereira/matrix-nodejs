@@ -1,0 +1,21 @@
+{
+  "name": "matrix-nodejs",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:eduardogspereira/matrix-nodejs.git",
+  "author": "Eduardo G. S. Pereira <edu_vcd@hotmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "gts": "^1.1.2",
+    "typescript": "~3.7.0",
+    "@types/node": "^10.0.3"
+  },
+  "scripts": {
+    "start": "yarn run compile && node ./build/src/index.js",
+    "check": "gts check",
+    "clean": "gts clean",
+    "compile": "tsc -p .",
+    "fix": "gts fix",
+    "prepare": "yarn run compile"
+  }
+}
