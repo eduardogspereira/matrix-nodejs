@@ -1,3 +1,3 @@
-const helloWorld = () => console.log('helloWorld!')
+import { main } from './main';
 
-helloWorld()
+main();
